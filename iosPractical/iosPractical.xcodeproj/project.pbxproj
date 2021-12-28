@@ -17,6 +17,9 @@
 		181DBB39277B88010094B25C /* iosPracticalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181DBB38277B88010094B25C /* iosPracticalTests.swift */; };
 		181DBB44277B88010094B25C /* iosPracticalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181DBB43277B88010094B25C /* iosPracticalUITests.swift */; };
 		63553980277ACFF2001BC8F4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6355397F277ACFF2001BC8F4 /* LoginVC.swift */; };
+		63553985277AD02E001BC8F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63553984277AD02E001BC8F4 /* GoogleService-Info.plist */; };
+		6355398D277AD084001BC8F4 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6355398C277AD084001BC8F4 /* RegisterVC.swift */; };
+		63553993277AD09C001BC8F4 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63553992277AD09C001BC8F4 /* HomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		181DBB43277B88010094B25C /* iosPracticalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosPracticalUITests.swift; sourceTree = "<group>"; };
 		181DBB45277B88010094B25C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6355397F277ACFF2001BC8F4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		63553984277AD02E001BC8F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6355398C277AD084001BC8F4 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		63553992277AD09C001BC8F4 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		CAE942E18DC3EC39685ED9E9 /* Pods-iosPractical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosPractical.debug.xcconfig"; path = "Target Support Files/Pods-iosPractical/Pods-iosPractical.debug.xcconfig"; sourceTree = "<group>"; };
 		D71FAE76F4043084F6C6FD35 /* Pods_iosPractical.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosPractical.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F6508092F1F962221AC7C6 /* Pods-iosPractical.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosPractical.release.xcconfig"; path = "Target Support Files/Pods-iosPractical/Pods-iosPractical.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +114,7 @@
 		181DBB20277B87FE0094B25C /* iosPractical */ = {
 			isa = PBXGroup;
 			children = (
+				63553984277AD02E001BC8F4 /* GoogleService-Info.plist */,
 				181DBB2F277B88010094B25C /* Info.plist */,
 				6355397E277ACFDD001BC8F4 /* Controller */,
 				63553974277ACFA9001BC8F4 /* ViewModel */,
@@ -182,9 +189,43 @@
 		6355397E277ACFDD001BC8F4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6355397F277ACFF2001BC8F4 /* LoginVC.swift */,
+				63553991277AD08B001BC8F4 /* Home */,
+				63553989277AD046001BC8F4 /* Authentication  */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		63553989277AD046001BC8F4 /* Authentication  */ = {
+			isa = PBXGroup;
+			children = (
+				6355398B277AD070001BC8F4 /* Registration */,
+				6355398A277AD068001BC8F4 /* Login */,
+			);
+			path = "Authentication ";
+			sourceTree = "<group>";
+		};
+		6355398A277AD068001BC8F4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6355397F277ACFF2001BC8F4 /* LoginVC.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6355398B277AD070001BC8F4 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				6355398C277AD084001BC8F4 /* RegisterVC.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		63553991277AD08B001BC8F4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				63553992277AD09C001BC8F4 /* HomeVC.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				181DBB2E277B88010094B25C /* LaunchScreen.storyboard in Resources */,
+				63553985277AD02E001BC8F4 /* GoogleService-Info.plist in Resources */,
 				181DBB2B277B88010094B25C /* Assets.xcassets in Resources */,
 				181DBB29277B87FE0094B25C /* Main.storyboard in Resources */,
 			);
@@ -364,7 +406,9 @@
 				181DBB26277B87FE0094B25C /* ViewController.swift in Sources */,
 				181DBB22277B87FE0094B25C /* AppDelegate.swift in Sources */,
 				63553980277ACFF2001BC8F4 /* LoginVC.swift in Sources */,
+				63553993277AD09C001BC8F4 /* HomeVC.swift in Sources */,
 				181DBB24277B87FE0094B25C /* SceneDelegate.swift in Sources */,
+				6355398D277AD084001BC8F4 /* RegisterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
