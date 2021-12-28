@@ -20,6 +20,12 @@
 		63553985277AD02E001BC8F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63553984277AD02E001BC8F4 /* GoogleService-Info.plist */; };
 		6355398D277AD084001BC8F4 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6355398C277AD084001BC8F4 /* RegisterVC.swift */; };
 		63553993277AD09C001BC8F4 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63553992277AD09C001BC8F4 /* HomeVC.swift */; };
+		635539A1277ADA43001BC8F4 /* ModelLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635539A0277ADA43001BC8F4 /* ModelLogin.swift */; };
+		635539B3277ADCAF001BC8F4 /* ModelRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635539B2277ADCAF001BC8F4 /* ModelRegister.swift */; };
+		635539C6277ADF23001BC8F4 /* Constant+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635539C5277ADF23001BC8F4 /* Constant+Validation.swift */; };
+		635539CF277ADF50001BC8F4 /* Constant+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635539CE277ADF50001BC8F4 /* Constant+String.swift */; };
+		635539D7277ADF62001BC8F4 /* Constant+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635539D6277ADF62001BC8F4 /* Constant+Alert.swift */; };
+		635539F7277AE517001BC8F4 /* Extension+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635539F6277AE517001BC8F4 /* Extension+ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +64,12 @@
 		63553984277AD02E001BC8F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6355398C277AD084001BC8F4 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		63553992277AD09C001BC8F4 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		635539A0277ADA43001BC8F4 /* ModelLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLogin.swift; sourceTree = "<group>"; };
+		635539B2277ADCAF001BC8F4 /* ModelRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRegister.swift; sourceTree = "<group>"; };
+		635539C5277ADF23001BC8F4 /* Constant+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constant+Validation.swift"; sourceTree = "<group>"; };
+		635539CE277ADF50001BC8F4 /* Constant+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constant+String.swift"; sourceTree = "<group>"; };
+		635539D6277ADF62001BC8F4 /* Constant+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constant+Alert.swift"; sourceTree = "<group>"; };
+		635539F6277AE517001BC8F4 /* Extension+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+ViewController.swift"; sourceTree = "<group>"; };
 		CAE942E18DC3EC39685ED9E9 /* Pods-iosPractical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosPractical.debug.xcconfig"; path = "Target Support Files/Pods-iosPractical/Pods-iosPractical.debug.xcconfig"; sourceTree = "<group>"; };
 		D71FAE76F4043084F6C6FD35 /* Pods_iosPractical.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosPractical.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F6508092F1F962221AC7C6 /* Pods-iosPractical.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosPractical.release.xcconfig"; path = "Target Support Files/Pods-iosPractical/Pods-iosPractical.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +128,8 @@
 			children = (
 				63553984277AD02E001BC8F4 /* GoogleService-Info.plist */,
 				181DBB2F277B88010094B25C /* Info.plist */,
+				635539F5277AE4FC001BC8F4 /* Extension */,
+				635539C4277ADF01001BC8F4 /* Constant */,
 				6355397E277ACFDD001BC8F4 /* Controller */,
 				63553974277ACFA9001BC8F4 /* ViewModel */,
 				63553958277ACF1B001BC8F4 /* AppDelegate */,
@@ -241,6 +255,7 @@
 		6355399B277AD45F001BC8F4 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				635539A0277ADA43001BC8F4 /* ModelLogin.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -248,8 +263,27 @@
 		6355399C277AD467001BC8F4 /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				635539B2277ADCAF001BC8F4 /* ModelRegister.swift */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		635539C4277ADF01001BC8F4 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				635539C5277ADF23001BC8F4 /* Constant+Validation.swift */,
+				635539CE277ADF50001BC8F4 /* Constant+String.swift */,
+				635539D6277ADF62001BC8F4 /* Constant+Alert.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		635539F5277AE4FC001BC8F4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				635539F6277AE517001BC8F4 /* Extension+ViewController.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,10 +461,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635539CF277ADF50001BC8F4 /* Constant+String.swift in Sources */,
 				181DBB26277B87FE0094B25C /* ViewController.swift in Sources */,
 				181DBB22277B87FE0094B25C /* AppDelegate.swift in Sources */,
+				635539A1277ADA43001BC8F4 /* ModelLogin.swift in Sources */,
+				635539F7277AE517001BC8F4 /* Extension+ViewController.swift in Sources */,
 				63553980277ACFF2001BC8F4 /* LoginVC.swift in Sources */,
+				635539B3277ADCAF001BC8F4 /* ModelRegister.swift in Sources */,
 				63553993277AD09C001BC8F4 /* HomeVC.swift in Sources */,
+				635539C6277ADF23001BC8F4 /* Constant+Validation.swift in Sources */,
+				635539D7277ADF62001BC8F4 /* Constant+Alert.swift in Sources */,
 				181DBB24277B87FE0094B25C /* SceneDelegate.swift in Sources */,
 				6355398D277AD084001BC8F4 /* RegisterVC.swift in Sources */,
 			);

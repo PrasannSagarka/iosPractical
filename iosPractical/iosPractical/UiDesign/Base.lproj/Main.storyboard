@@ -108,6 +108,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="bjY-CC-hAk"/>
                     <connections>
+                        <outlet property="btnSignIn" destination="mZS-q7-ZgT" id="RF3-Gt-q6m"/>
                         <outlet property="tfEmail" destination="FAE-i2-K3y" id="V6c-ju-zpl"/>
                         <outlet property="tfPassword" destination="mMJ-7P-WWQ" id="9UR-j6-NQi"/>
                     </connections>
@@ -215,6 +216,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnSignUp" destination="vu9-xD-7hs" id="lr9-AZ-yzb"/>
                         <outlet property="tfEmail" destination="KPS-68-y21" id="SLo-sY-Ew9"/>
                         <outlet property="tfPassword" destination="SOG-R7-leN" id="Cfj-Bg-xZ8"/>
                     </connections>
