@@ -31,6 +31,7 @@ class LoginVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.btnSignIn.isEnabled = false
         self.btnSignIn.alpha = 0.5
+        self.FuncCheckLogin()
     }
     
     //MARK:- CustomFunction
@@ -40,14 +41,21 @@ class LoginVC: UIViewController {
         } else if tfPassword.text == "" {globalAlert.showAlertMessage(vc:self, titleStr:StringError.AppName, messageStr:StringError.ErrorPasswordEmpty)
         } else {
             objLogin.Login(vc:self, viewMain:self.view, strEmail:tfEmail.text ?? "", StrPassword:tfPassword.text ?? "") { (modelData) in
-                funcSetRootView(identifier:"Home", isDelay:false)
+             //   funcSetRootView(identifier:"Home", isDelay:false)
                 if modelData.strMessage == StringError.SucessSigIn {
+                    UserDefaults.standard.setValue(true, forKey:UDefault.Login)
+                    UserDefaults.standard.setValue(modelData.strEMail ?? "", forKey:UDefault.Email)
                     funcSetRootView(identifier:"Home", isDelay:false)
-                    UserDefaults.standard.setValue(true, forKey:"Login")
-                    UserDefaults.standard.setValue(modelData.strEMail ?? "", forKey:"email")
                 } else {
                     globalAlert.showAlertMessage(vc:self, titleStr:StringError.AppName, messageStr:modelData.strMessage ?? "")
                 }
+            }
+        }
+    }
+    func FuncCheckLogin() {
+        if let checkLogin = UserDefaults.standard.object(forKey:UDefault.Login) as? Bool {
+            if checkLogin == true {
+                funcSetRootView(identifier:"Home", isDelay:false)
             }
         }
     }
