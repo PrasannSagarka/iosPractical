@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		181DBB2E277B88010094B25C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181DBB2C277B88010094B25C /* LaunchScreen.storyboard */; };
 		181DBB39277B88010094B25C /* iosPracticalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181DBB38277B88010094B25C /* iosPracticalTests.swift */; };
 		181DBB44277B88010094B25C /* iosPracticalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181DBB43277B88010094B25C /* iosPracticalUITests.swift */; };
+		63553980277ACFF2001BC8F4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6355397F277ACFF2001BC8F4 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		181DBB3F277B88010094B25C /* iosPracticalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosPracticalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		181DBB43277B88010094B25C /* iosPracticalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosPracticalUITests.swift; sourceTree = "<group>"; };
 		181DBB45277B88010094B25C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6355397F277ACFF2001BC8F4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		CAE942E18DC3EC39685ED9E9 /* Pods-iosPractical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosPractical.debug.xcconfig"; path = "Target Support Files/Pods-iosPractical/Pods-iosPractical.debug.xcconfig"; sourceTree = "<group>"; };
 		D71FAE76F4043084F6C6FD35 /* Pods_iosPractical.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosPractical.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F6508092F1F962221AC7C6 /* Pods-iosPractical.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosPractical.release.xcconfig"; path = "Target Support Files/Pods-iosPractical/Pods-iosPractical.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,13 +108,11 @@
 		181DBB20277B87FE0094B25C /* iosPractical */ = {
 			isa = PBXGroup;
 			children = (
-				181DBB21277B87FE0094B25C /* AppDelegate.swift */,
-				181DBB23277B87FE0094B25C /* SceneDelegate.swift */,
-				181DBB25277B87FE0094B25C /* ViewController.swift */,
-				181DBB27277B87FE0094B25C /* Main.storyboard */,
-				181DBB2A277B88010094B25C /* Assets.xcassets */,
-				181DBB2C277B88010094B25C /* LaunchScreen.storyboard */,
 				181DBB2F277B88010094B25C /* Info.plist */,
+				6355397E277ACFDD001BC8F4 /* Controller */,
+				63553974277ACFA9001BC8F4 /* ViewModel */,
+				63553958277ACF1B001BC8F4 /* AppDelegate */,
+				63553957277ACF03001BC8F4 /* UiDesign */,
 			);
 			path = iosPractical;
 			sourceTree = "<group>";
@@ -141,7 +141,6 @@
 				CAE942E18DC3EC39685ED9E9 /* Pods-iosPractical.debug.xcconfig */,
 				F6F6508092F1F962221AC7C6 /* Pods-iosPractical.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -151,6 +150,41 @@
 				D71FAE76F4043084F6C6FD35 /* Pods_iosPractical.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63553957277ACF03001BC8F4 /* UiDesign */ = {
+			isa = PBXGroup;
+			children = (
+				181DBB27277B87FE0094B25C /* Main.storyboard */,
+				181DBB2A277B88010094B25C /* Assets.xcassets */,
+				181DBB2C277B88010094B25C /* LaunchScreen.storyboard */,
+			);
+			path = UiDesign;
+			sourceTree = "<group>";
+		};
+		63553958277ACF1B001BC8F4 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				181DBB25277B87FE0094B25C /* ViewController.swift */,
+				181DBB21277B87FE0094B25C /* AppDelegate.swift */,
+				181DBB23277B87FE0094B25C /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		63553974277ACFA9001BC8F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6355397E277ACFDD001BC8F4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6355397F277ACFF2001BC8F4 /* LoginVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +363,7 @@
 			files = (
 				181DBB26277B87FE0094B25C /* ViewController.swift in Sources */,
 				181DBB22277B87FE0094B25C /* AppDelegate.swift in Sources */,
+				63553980277ACFF2001BC8F4 /* LoginVC.swift in Sources */,
 				181DBB24277B87FE0094B25C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
