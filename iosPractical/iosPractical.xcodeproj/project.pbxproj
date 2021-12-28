@@ -182,6 +182,7 @@
 		63553974277ACFA9001BC8F4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				6355399A277AD444001BC8F4 /* Authentication */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -226,6 +227,29 @@
 				63553992277AD09C001BC8F4 /* HomeVC.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		6355399A277AD444001BC8F4 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				6355399C277AD467001BC8F4 /* Register */,
+				6355399B277AD45F001BC8F4 /* Login */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		6355399B277AD45F001BC8F4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6355399C277AD467001BC8F4 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

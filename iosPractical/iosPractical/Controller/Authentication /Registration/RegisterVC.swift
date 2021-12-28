@@ -9,21 +9,27 @@ import UIKit
 
 class RegisterVC: UIViewController {
 
+    //MARK:- IBOutelts
+    @IBOutlet weak var tfEmail: UITextField!
+    @IBOutlet weak var tfPassword: UITextField!
+    
+    //MARK:- ViewController_LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //MARK:- CustomFunction
+    
+    //MARK:- IBAction
+    @IBAction func btnActionSignIn(_ sender: Any) {
+        self.navigationController?.popViewController(animated:true)
     }
-    */
-
+    @IBAction func btnActionSignUp(_ sender: Any) {
+        let objRegister = self.storyboard?.instantiateViewController(withIdentifier:"RegisterVC") as! RegisterVC
+        self.navigationController?.pushViewController(objRegister, animated:true)
+    }
+}
+//MARK:- TextFieldDElegete
+extension RegisterVC : UITextFieldDelegate {
+    
 }
